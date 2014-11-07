@@ -1,4 +1,4 @@
-(ns euler.problem2.core)
+(ns euler.problem2)
 
 ;; uses +' to promote to BigInt
 (def fib (map first (iterate (fn [[a b]] [b (+' a b)]) [1 2])))
