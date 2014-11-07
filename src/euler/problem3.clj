@@ -20,5 +20,14 @@
    (if (= 1 n)
      acc
      (if (= 0 (rem n k))
-       (recur (quot n k) k (cons k acc))
+       (do
+         (println "quotient" (quot n k))
+         (recur (quot n k) k (cons k acc)))
        (recur n (inc k) acc)))))
+
+(defn factors2 [n]
+  (into (sorted-set)
+        (reduce concat
+                (for [x (range 1 (inc (Math/sqrt n)))
+                      :when (zero? (rem n x))]
+                  [x (/ n x)]))))
