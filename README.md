@@ -1,14 +1,10 @@
 # euler
 
-A Clojure solutions to Project Euler problems
+Solutions to some of the [Project Euler](https://projecteuler.net/) problems using clojure
 
 ## Usage
 
-FIXME
+each problem has a separate namespace and should be individually loaded into a REPL
 
 ## License
-
-Copyright © 2014 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+Copyright © 2017
