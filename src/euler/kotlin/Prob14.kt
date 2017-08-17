@@ -33,7 +33,7 @@ fun main( args: Array<String> ) {
     var czNum = -1
     val elapsedTime = measureTimeMillis {
         for( i in 1..999999) {
-            val czs = collatz( i.toLong() );
+            val czs = collatz( i.toLong() )
             if ( czs.size > maxCount ) {
                 maxCount = czs.size
                 czNum = i
@@ -41,7 +41,7 @@ fun main( args: Array<String> ) {
         }
     }
 
-    println( "the number with the longest collatz sequence is ${czNum} with a length of ${maxCount}")
+    println( "the number with the longest collatz sequence is $czNum with a length of $maxCount")
     println( "${elapsedTime}ms" )
 
 }
