@@ -24,5 +24,5 @@
           :let [ctz (collatz n)
                 c (count ctz)]]
       [c n])
-    (sort-by first > )
+    (sort-by first >)
     (first)))
